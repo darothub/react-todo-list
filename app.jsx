@@ -4,8 +4,8 @@ class App extends React.Component{
             <div className="container">
                 <Header />
                 <Nav />
-                <Form />
-                <Task />
+                <Form title ="Task todo" />
+                <Task  />
             </div>
         )
        
@@ -31,12 +31,12 @@ const Nav =()=>{
     )
 }
 
-const Form =()=>{
+const Form =(props)=>{
     return (
         
             <form>
                 <div className="form-group">
-                    <label htmlFor="input" className="lead text-light">Task</label>
+                    <label htmlFor="input" className="lead text-light">{props.title}</label>
                     <input type="text" className="form-control"   placeholder="Enter task" />
                     <button type="submit" className="btn btn-success btn-block mt-2">Submit</button>
                 </div>
