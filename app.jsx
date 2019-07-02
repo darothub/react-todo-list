@@ -3,10 +3,22 @@ class App extends React.Component{
         return(
             <div className="container">
                 <Header />
+                <Nav />
             </div>
         )
        
     }
+}
+
+const Nav =()=>{
+    return (
+        <div className= "nav justify-content-center nav-text">
+            <a href ="" className="nav-link text-reset">Home</a>
+            <a href ="" className="nav-link text-reset">Products</a>
+            <a href ="" className="nav-link text-reset">Services</a>
+            <a href ="" className="nav-link text-reset">About us</a>
+        </div>
+    )
 }
 
 const Header =()=>{
