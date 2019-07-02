@@ -5,6 +5,7 @@ class App extends React.Component{
                 <Header />
                 <Nav />
                 <Form />
+                <Task />
             </div>
         )
        
@@ -40,6 +41,29 @@ const Form =()=>{
                     <button type="submit" className="btn btn-success btn-block mt-2">Submit</button>
                 </div>
             </form>
+       
+    )
+}
+const Task =()=>{
+    return (
+        
+            
+                <div className="form-group">
+                    <li class="list-group-item">
+                        Task
+                        <button type="submit" className="btn btn-sm btn-danger float-right">x</button>
+                    </li>
+                    <li class="list-group-item">
+                        Task
+                        <button type="submit" className="btn btn-sm btn-danger float-right">x</button>
+                    </li>
+                    <li class="list-group-item">
+                        Task
+                        <button type="submit" className="btn btn-sm btn-danger float-right">x</button>
+                    </li>
+              
+                </div>
+            
        
     )
 }
