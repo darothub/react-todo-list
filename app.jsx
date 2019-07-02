@@ -1,11 +1,18 @@
 class App extends React.Component{
+    state = {
+        myTasks : ["task-1","task-2","task-3" ]
+    }
     render(){
         return(
             <div className="container">
                 <Header />
                 <Nav />
                 <Form title ="Task todo" />
-                <Task  />
+                
+                {this.state.myTasks.map(task => (<Task  /> ))}
+                
+                
+                
             </div>
         )
        
@@ -53,15 +60,7 @@ const Task =()=>{
                         Task
                         <button type="submit" className="btn btn-sm btn-danger float-right">x</button>
                     </li>
-                    <li class="list-group-item">
-                        Task
-                        <button type="submit" className="btn btn-sm btn-danger float-right">x</button>
-                    </li>
-                    <li class="list-group-item">
-                        Task
-                        <button type="submit" className="btn btn-sm btn-danger float-right">x</button>
-                    </li>
-              
+                            
                 </div>
             
        
